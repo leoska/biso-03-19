@@ -1,0 +1,18 @@
+version: '3.1'
+
+networks:
+  mirea-network:
+    external: false
+
+services:
+  http-node-server:
+    image: http-node-server:latest
+    hostname: http-node-server
+    restart: "no"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./index.js:/app/index.js:ro
+    ports:
+      - "25665:25665"
+    networks:
+      - mirea-network

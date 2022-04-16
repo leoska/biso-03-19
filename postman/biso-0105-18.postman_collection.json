@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "42fbf84e-5928-4ac9-88a1-9ac63398d890",
+		"name": "biso-0105-18",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getChat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:25665/getChat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "25665",
+					"path": [
+						"getChat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nuke\",\n    \"message\": \"Hello leoska!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:25665/sendMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "25665",
+					"path": [
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
